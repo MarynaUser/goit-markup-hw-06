@@ -410,18 +410,42 @@ body {
 
 }
 
+
 .title-block {
     color: #2e2f42;
     /*font-size: 20px;*/
     font-size: 36px;
+    font-weight: 700;
     /*line-height: 1.2;*/
-    line-height: 1,1;
+    line-height: 1.1;
+    /*font-weight: 500;*/
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+
+} 
+
+.two-section-block {
+    color: #2e2f42;
+    /*font-size: 20px;*/
+    font-size: 36px;
+    font-weight: 700;
+    /*line-height: 1.2;*/
+    line-height: 1.1;
+    /*font-weight: 500;*/
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+}
+
+.portfolio-block {
+    color: #2e2f42;
+    font-size: 20px;
+    line-height: 1.2;
     font-weight: 500;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
-    text-align: center;
 
 }
+
 
 .title-block-one {
     text-align: center;
@@ -497,6 +521,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    font-weight: 400;
 
 }
 
@@ -976,20 +1001,35 @@ ol {
         margin-bottom: 72px;
     }
 
+    .team-photo {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+        justify-content: center;
+     }
+
     .list-item {
         width: calc((100% - 144px) / 2);
     }
 
-    .title-block {
+    .portfolio-block {
         color: #2e2f42;
-        font-size: 36px;
-        line-height: 1,1;
-        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.2;
+        font-weight: 500;
         letter-spacing: 0.02em;
         margin-bottom: 8px;
-        text-align: left;
-        margin-left: 16px;
     
+    }
+
+    .two-section-block {
+        color: #2e2f42;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.1;
+        letter-spacing: 0.02em;
+        margin-bottom: 8px;
+        margin-left: 16px;
     }
 
     .description-one {
@@ -1021,7 +1061,7 @@ ol {
     }
 
     .first-point {
-        width: calc((100% - 96px) / 2);
+        width: calc((100% - 24px) / 2);
     
 }
 
@@ -1064,11 +1104,6 @@ ol {
     
     }
 
-    .nav {
-        gap: 24px;
-
-    }
-
     .icon-container {
         display: flex;
     }
@@ -1083,11 +1118,11 @@ ol {
         letter-spacing: 0.02em;
         color: #ffffff;
         align-items: center;
+        max-width: 496px;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 48px;
-        text-align: center;
-    
+        
     }
     
     .section-one {
@@ -1110,6 +1145,31 @@ ol {
     
     .next-title-ourportfolio {
         margin-bottom: 72px;
+    }
+
+    .two-section-block {
+        color: #2e2f42;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        margin-bottom: 8px;
+    }
+
+    .description-one {
+        word-wrap: break-word;
+        color: #434455;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        
+        
+    }
+
+    .nav {
+        display: flex;
+        gap: 24px;
+        align-items: center;
     }
         
         
