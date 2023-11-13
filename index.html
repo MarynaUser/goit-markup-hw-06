@@ -121,7 +121,11 @@
                 <h2 class="next-title-ourteam">Our Team</h2>
                 <ul class="team-photo">
                     <li class="photo-color second-point">
-                        <img src="./images/img.jpg" alt="Mark Guerrero" width="264" height="260" class="block-image">
+                        <img 
+                        srcset="
+                        ../images/retina/img.jpg 1x, ../images/retina/img-1@2x.jpg 2x" 
+                        src="./images/retina/img.jpg"
+                            alt="Mark Guerrero" width="264" height="260" class="block-image">
                         <div class="employee-position">
                             <h3 class="name">Mark Guerrero</h3>
                             <p class="description">Product Designer</p>
@@ -148,7 +152,11 @@
                     </li>
 
                     <li class="photo-color second-point">
-                        <img src="./images/img_1.jpg" alt="Tom Ford" width="264" height="260" class="block-image">
+                        <img 
+                        srcset="
+                        ../images/retina/teamtwo.jpg 1x, ../images/retina/teamtwo@2x.jpg 2x" 
+                        src="./images/retina/teamtwo.jpg"
+                            alt="Mark Guerrero" width="264" height="260" class="block-image">
                         <div class="employee-position">
                             <h3 class="name">Tom Ford</h3>
                             <p class="description">Frontend Developer</p>
@@ -176,7 +184,8 @@
                     </li>
 
                     <li class="photo-color second-point">
-                        <img src="./images/img_2.jpg" alt="Camila Garcia" width="264" height="260" class="block-image">
+                        <img srcset="../images/retina/teamthree.jpg 1x, ../images/retina/teamthree@2x.jpg 2x"
+                            src="./images/retina/teamthree.jpg" alt="Mark Guerrero" width="264" height="260" class="block-image">
                         <div class="employee-position">
                             <h3 class="name">Camila Garcia</h3>
                             <p class="description">Marketing</p>
@@ -204,7 +213,10 @@
                     </li>
 
                     <li class="photo-color second-point">
-                        <img src="./images/img_3.jpg" alt="Daniel Wilson" width="264" height="260" class="block-image">
+                        <img 
+                        srcset="../images/retina/teamfour.jpg 1x, ../images/retina/teamfour@2x.jpg 2x" 
+                        src="./images/retina/teamfour.jpg"
+                            alt="Mark Guerrero" width="264" height="260" class="block-image">
                         <div class="employee-position">
                             <h3 class="name">Daniel Wilson</h3>
                             <p class="description">UI Designer</p>
@@ -241,8 +253,20 @@
                 <ul class="services">
                     <li class="first-point">
                         <div class="image-container">
-                            <img src="./images/banking_app.jpg" alt="Banking App" width="360" height="300"
-                                class="block-image">
+                            <picture>
+                                <!-- Desktop screen -->
+                                <source media="(min-width: 1158px)" srcset="./images/retina/photoone.jpg 1x, ./images/retina/photoone@2x.jpg 2x"
+                                    type="image/jpg">
+                                <!-- Tablet screen -->
+                                <source media="(min-width: 768px)" srcset="./images/retina/photoone-tab.jpg 1x, ./images/retina/photoone-tab@2x.jpg 2x"
+                                    type="image/jpg" />
+                                <!-- Mobile screen -->
+                                <source media="(max-width: 767px)" srcset="./images/retina/photoone-mob.jpg 1x, ./images/retina/photoone-mob@2x.jpg 2x"
+                                    type="image/jpg"/>
+                                <img src="./images/retina/photoone-mob.jpg" alt="Banking App" width="264" height="260" loading="lazy" class="block-image">
+                            </picture>
+                    
+                            
                             <p class="card-description">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                 App · Calorie Tracker App ·
                                 Exotic Fruit Ecommerce App · Cloud Storage App
@@ -256,9 +280,22 @@
 
                     <li class="first-point">
                         <div class="image-container">
-                            <img src="./images/cashless_payment.jpg" alt="Cashless Payment" width="360" height="300"
+
+                        <picture>
+                            <!-- Desktop screen -->
+                            <source media="(min-width: 1158px)" srcset="./images/retina/phototwo.jpg 1x, ./images/retina/phototwo@2x.jpg 2x"
+                                type="image/jpg">
+                            <!-- Tablet screen -->
+                            <source media="(min-width: 768px)" srcset="./images/retina/phototwo-tab.jpg 1x, ./images/retina/phototwo-tab@2x.jpg 2x"
+                                type="image/jpg" />
+                            <!-- Mobile screen -->
+                            <source media="(max-width: 767px)" srcset="./images/retina/phototwo-mob.jpg 1x, ./images/retina/phototwo-mob@2x.jpg 2x"
+                                type="image/jpg" />
+                            <img src="./images/retina/phototwo-mob.jpg" alt="Banking App" width="264" height="260" loading="lazy"
                                 class="block-image">
-                            <p class="card-description">14 Stylish and User-Friendly App Design Concepts · Task Manager
+                        </picture>
+                           
+                        <p class="card-description">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                 App · Calorie Tracker App ·
                                 Exotic Fruit Ecommerce App · Cloud Storage App
                             </p>
@@ -271,8 +308,19 @@
 
                     <li class="first-point">
                         <div class="image-container">
-                            <img src="./images/meditation_app.jpg" alt="Meditation App" width="360" height="300"
-                                class="block-image">
+                            <picture>
+                                <!-- Desktop screen -->
+                                <source media="(min-width: 1158px)" srcset="./images/retina/phototree.jpg 1x, ./images/retina/photothree@2x.jpg 2x"
+                                    type="image/jpg">
+                                <!-- Tablet screen -->
+                                <source media="(min-width: 768px)"
+                                    srcset="./images/retina/photothree-tab.jpg 1x, ./images/retina/photothree-tab@2x.jpg 2x" type="image/jpg" />
+                                <!-- Mobile screen -->
+                                <source media="(max-width: 767px)"
+                                    srcset="./images/retina/photothree-mob.jpg 1x, ./images/retina/photothree-mob@2x.jpg 2x" type="image/jpg" />
+                                <img src="./images/retina/photothree-mob.jpg" alt="Banking App" width="264" height="260" loading="lazy"
+                                    class="block-image">
+                            </picture>
                             <p class="card-description">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                 App · Calorie Tracker App ·
                                 Exotic Fruit Ecommerce App · Cloud Storage App
@@ -286,8 +334,19 @@
 
                     <li class="first-point">
                         <div class="image-container">
-                            <img src="./images/taxi_service.jpg" alt="Taxi Service" width="360" height="300"
-                                class="block-image">
+                            <picture>
+                                <!-- Desktop screen -->
+                                <source media="(min-width: 1158px)" srcset="./images/retina/photofour.jpg 1x, ./images/retina/photofour@2x.jpg 2x"
+                                    type="image/jpg">
+                                <!-- Tablet screen -->
+                                <source media="(min-width: 768px)"
+                                    srcset="./images/retina/photofour-tab.jpg 1x, ./images/retina/photofour-tab@2x.jpg 2x" type="image/jpg" />
+                                <!-- Mobile screen -->
+                                <source media="(max-width: 767px)"
+                                    srcset="./images/retina/photofour-mob.jpg 1x, ./images/retina/photofour-mob@2x.jpg 2x" type="image/jpg" />
+                                <img src="./images/retina/photofour-mob.jpg" alt="Banking App" width="264" height="260" loading="lazy"
+                                    class="block-image">
+                            </picture>
                             <p class="card-description">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                 App · Calorie Tracker App ·
                                 Exotic Fruit Ecommerce App · Cloud Storage App
@@ -301,8 +360,19 @@
 
                     <li class="first-point">
                         <div class="image-container">
-                            <img src="./images/screen_illustrations.jpg" alt="Screen Illustrations" width="360"
-                                height="300" class="block-image">
+                            <picture>
+                                <!-- Desktop screen -->
+                                <source media="(min-width: 1158px)" srcset="./images/retina/photofive.jpg 1x, ./images/retina/photofive@2x.jpg 2x"
+                                    type="image/jpg">
+                                <!-- Tablet screen -->
+                                <source media="(min-width: 768px)"
+                                    srcset="./images/retina/photofive-tab.jpg 1x, ./images/retina/photofive-tab@2x.jpg 2x" type="image/jpg" />
+                                <!-- Mobile screen -->
+                                <source media="(max-width: 767px)"
+                                    srcset="./images/retina/photofive-mob.jpg 1x, ./images/retina/photofive-mob@2x.jpg 2x" type="image/jpg" />
+                                <img src="./images/retina/photofive-mob.jpg" alt="Banking App" width="264" height="260" loading="lazy"
+                                    class="block-image">
+                            </picture>
                             <p class="card-description">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                 App · Calorie Tracker App ·
                                 Exotic Fruit Ecommerce App · Cloud Storage App
@@ -316,8 +386,19 @@
 
                     <li class="first-point">
                         <div class="image-container">
-                            <img src="./images/online_courses.jpg" alt="Online Courses" width="360" height="300"
-                                class="block-image">
+                            <picture>
+                                <!-- Desktop screen -->
+                                <source media="(min-width: 1158px)" srcset="./images/retina/photosix.jpg 1x, ./images/retina/photosix@2x.jpg 2x"
+                                    type="image/jpg">
+                                <!-- Tablet screen -->
+                                <source media="(min-width: 768px)"
+                                    srcset="./images/retina/photosix-tab.jpg 1x, ./images/retina/photosix-tab@2x.jpg 2x" type="image/jpg" />
+                                <!-- Mobile screen -->
+                                <source media="(max-width: 767px)"
+                                    srcset="./images/retina/photosix-mob.jpg 1x, ./images/retina/photosix-mob@2x.jpg 2x" type="image/jpg" />
+                                <img src="./images/retina/photosix-mob.jpg" alt="Banking App" width="264" height="260" loading="lazy"
+                                    class="block-image">
+                            </picture>
                             <p class="card-description">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                 App · Calorie Tracker App ·
                                 Exotic Fruit Ecommerce App · Cloud Storage App
@@ -388,7 +469,7 @@
 
     </footer>
 
-    <!--<div class="backdrop-modal pop-up-window"> 
+    <div class="backdrop-modal pop-up-window"> 
         <div class="modal">
             <button type="button" class="modal-button">
                 <svg class="button-icon" width="8" height="8">
@@ -443,11 +524,11 @@
                 <button type="button" class="backdrop-sup-btn">Send</button>
             </form>
         </div>
-    </div>-->
+    </div>
 
     <!--MOBILE MENU-->
 
-    <div class="mobile-menu is-open">
+    <div class="mobile-menu">
         <div class="container mob-menu-container">
             <button class="btn-mob-menu" type="button"><svg class="mob-menu-close-btn" width="24" height="24">
                 <use href="./images/icons (2).svg#icon-close"></use>
