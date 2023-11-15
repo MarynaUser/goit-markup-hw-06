@@ -14,6 +14,7 @@ body {
 /*header*/
 
 .header {
+    padding: 16px 0;
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
@@ -306,7 +307,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    max-width: 1440px;
+    max-width: 320px;
     margin: 0 auto;
 }
 
@@ -382,7 +383,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 }
 
 .next-section {
-    padding: 120px 0;
+    padding: 96px 0;
 
 }
 
@@ -535,6 +536,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     line-height: 1.1;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
+    text-align: center;
 }
 
 .portfolio-block {
@@ -1111,6 +1113,10 @@ ol {
         justify-content: space-between;
     }
 
+    .header {
+        padding: 0 0;
+    }
+
     .mobile-menu {
         display: none;
     }
@@ -1175,6 +1181,10 @@ ol {
 
     }
 
+    .nav {
+        justify-content: center;
+    }
+
     .two-section-block {
         color: #2e2f42;
         font-size: 36px;
@@ -1182,7 +1192,7 @@ ol {
         line-height: 1.1;
         letter-spacing: 0.02em;
         margin-bottom: 8px;
-        margin-left: 16px;
+        text-align: start;
     }
 
     .description-one {
@@ -1192,20 +1202,17 @@ ol {
         font-weight: 500;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        margin-left: 16px;
 
-    }
-
-    .next-section {
-        padding: 96px 0;
     }
 
     .first-section-title {
+        max-width: 496px;
         font-size: 56px;
         margin-bottom: 36px;
     }
 
     .section-one {
+        max-width: 768px;
         padding: 112px 0;
     }
 
@@ -1278,6 +1285,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
     .hero {
         background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url('../images/retina/bg-tab@2x.jpg');
+        max-width: 1536px;
     }
 }
 
@@ -1375,6 +1383,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
     }
 
     .next-section {
+        
         padding: 120px 0;
     }
 
@@ -1392,6 +1401,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
     }
 
     .section-one {
+        max-width: 1440px;
         padding: 188px 0;
     }
 
@@ -1435,7 +1445,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
     .nav {
         display: flex;
         gap: 24px;
-        align-items: center;
+       
     }
 
     .form-container {
@@ -1472,6 +1482,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
     .hero {
         background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url('../images/retina/bg-desk@2x.jpg');
+        max-width: 2880px;
     }
 }
 
