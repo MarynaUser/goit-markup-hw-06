@@ -747,6 +747,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
    
 }
 
+
 .logo-paragraph {
     display: flex;
     flex-direction: column;
